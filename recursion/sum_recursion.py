@@ -6,6 +6,26 @@
 # Function to check the value of the index at a given point and
 # add it to the sum of the previous indexes.
 def add_up_to(list, index):
+    '''
+    Calculates the sum of elements in a list up to a specified index.
+
+    Parameters:
+    - lst (list): A list of numeric values.
+    - index (int): The index up to which the elements should be summed.
+
+    Returns:
+    numeric: The sum of elements in the list up to the specified index.
+
+    Example:
+    >>> add_up_to([1, 2, 3, 4, 5], 2)
+    6
+
+    The function recursively adds the current element (at the given index) to
+    the sum of elements up to the previous index.
+
+    Note: The index should be a valid index in the list; otherwise, an
+    IndexError may occur.
+    '''
     # Base case. Checks if index is 0 and returns the vallue at index 0.
     if index == 0:
         return list[0]

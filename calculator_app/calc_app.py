@@ -7,7 +7,17 @@ import numpy as np
 
 
 def add_num(a, b):
-    '''Takes in two numbers, returns the sum of the two values.'''
+    '''Takes in two numbers, returns their sum.
+    
+    Parameters:
+    - a (int): The first number
+    - b(int): The second number
+    
+    Returns:
+    numeric: The sum of the input numbers.
+    
+    The function also appends the calculation to a file named equeation.txt
+    '''
     y = np.add(a, b)
     # If the file "equations" does not exist, create one,
     # then add to it all calculations that the user has made.
@@ -17,7 +27,17 @@ def add_num(a, b):
 
 
 def subtract_num(a, b):
-    '''Takes in two numbers, returns the result of a subtract b. '''
+    '''Takes in two numbers, returns the result of a subtract b.
+     
+      Parameters:
+    - a (int): The first number
+    - b(int): The second number
+    
+    Returns:
+    numeric: The subtraction of the input numbers.
+    
+    The function also appends the calculation to a file named equeation.txt 
+    '''
     y = np.subtract(a, b)
     with open('equations.txt', 'a') as file:
         file.write(f'{a} - {b} = {y}\n')
@@ -25,7 +45,17 @@ def subtract_num(a, b):
 
 
 def multiply_num(a, b):
-    '''Takes in two numbers, returns the product of the two values.'''
+    '''Takes in two numbers, returns the product of the two values.
+    
+    Parameters:
+    - a (int): The first number
+    - b(int): The second number
+    
+    Returns:
+    numeric: The product of the input numbers.
+    
+    The function also appends the calculation to a file named equeation.txt
+    '''
     y = np.multiply(a, b)
     with open('equations.txt', 'a') as file:
         file.write(f'{a} * {b} = {y}\n')
@@ -33,7 +63,17 @@ def multiply_num(a, b):
 
 
 def divide_num(a, b):
-    '''Takes in two numbers, returns the quotient of the two values.'''
+    '''Takes in two numbers, returns the quotient of the two values.
+    
+    Parameters:
+    - a (int): The first number
+    - b(int): The second number
+    
+    Returns:
+    numeric: The division of the input numbers.
+    
+    The function also appends the calculation to a file named equeation.txt
+    '''
     y = np.divide(a, b)
     with open('equations.txt', 'a') as file:
         file.write(f'{a} / {b} = {y}\n')

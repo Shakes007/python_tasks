@@ -1,4 +1,20 @@
 def largest_number(numbers):
+    '''
+    Finds the largest number in a list of numbers.
+    
+    Parameters:
+    - numbers (list): A list of numberic numbers.
+    
+    Returns:
+    numberic or None: The largest number in the list, or None if the list
+    is empty.
+    
+    If the list contains only one number, that number is returned.
+    
+    Example:
+    >>> largest_number([3, 1, 7, 4, 5])
+    7
+    '''
     # If there are no numbers in the list, return nothing.
     if not numbers:
         return None
